@@ -11,7 +11,8 @@ input type이 number 일 때는 maxlength가 정상 작동하지 않는다.
 
 1. HTML
 ```<input class="form-control" type="number" placeholder="생년월일 6자리 ex)910504" 
-maxlength="6" oninput="numberMaxLength(this);"/```
+maxlength="6" oninput="numberMaxLength(this);"
+```
 
 2. Script
 ```<script>
@@ -20,4 +21,5 @@ maxlength="6" oninput="numberMaxLength(this);"/```
             e.value = e.value.slice(0, e.maxLength);
         }
     }
-</script>```
+</script>
+```
