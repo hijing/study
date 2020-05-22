@@ -21,7 +21,7 @@ text에는 변환할 문자열을 전달합니다.
 
 JSON.parse() 메소드는 오직 JSON 형식의 문자열만을 변환할 수 있습니다.
 
-'''
+```
 <script>
 		// JSON 형식의 문자열
 		var data = '{"title": "memo", "count": 3}';
@@ -30,13 +30,12 @@ JSON.parse() 메소드는 오직 JSON 형식의 문자열만을 변환할 수 �
 		document.getElementById("json").innerHTML = obj + "<br>";
 		document.getElementById("json").innerHTML += obj.title + ", " + obj.count;
 	</script>
-'''
+```
 
 ==>
-'''
 [object Object]
 memo, 3
-'''
+
 
 
 
@@ -48,20 +47,19 @@ JSON.stringify(value)
  
 value에는 변환할 자바스크립트 객체를 전달합니다.
 이 메소드는 UTF-16으로 인코딩된 JSON 형식의 문자열을 반환합니다.
-'''
+
+```
 <script>
 		var data = {title: "memo", count: 3};	// 자바스크립트 객체
 		
 		var obj = JSON.stringify(data);	// 자바스크립트 객체를 문자열로 변환함.
 		document.getElementById("json").innerHTML = obj;
 </script>
-'''
+```
 
 
 ==>
-'''
 {"title":"memo","count":"3"}
-'''
 
 
 
@@ -77,7 +75,7 @@ YYYY-MM-DDTHH:mm:ss.sssZ
 또는
 ±YYYYYY-MM-DDTHH:mm:ss.sssZ
 
-'''
+```
 <script>
 		var date = new Date();		// 자바스크립트 Date 객체
 		var str = date.toJSON();	// Date 객체를 JSON 형식의 문자열로 변환함.
@@ -85,11 +83,9 @@ YYYY-MM-DDTHH:mm:ss.sssZ
 		document.getElementById("json").innerHTML = date + "<br>";
 		document.getElementById("json").innerHTML += str;
 </script>
-'''
+```
 
 
 ==>
-'''
 Thu Feb 06 2020 17:51:21 GMT+0900 (한국 표준시)
 2020-02-06T08:51:21.672Z
-'''
