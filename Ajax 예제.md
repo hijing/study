@@ -49,7 +49,7 @@ $.ajax({
 ```
 <br>
 위의 예제는 test.html이 동적으로 작동한다는 가정을 하고 cache를 false로 하고 사용<br>
-브라우저의 cache내용을 받지 않고 서버에서 새로 받아오는 것으로 이해<br>
+브라우저의 cache내용을 받지 않고 서버에서 새로 받아오는 것으로 이해하고<br>
 <br>
-그리고 ajax가 종료되면 done함수의 results 엘리먼트에 서버에서 받아온 HTML을 엘리먼트 뒤에 추가(append)
+그리고 ajax가 종료되면 done함수의 results 엘리먼트에 서버에서 받아온 HTML을 엘리먼트 뒤에 추가(append)함.
 
